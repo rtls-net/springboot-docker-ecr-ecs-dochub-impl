@@ -16,9 +16,9 @@
 
 -   if you building through maven build and spring  boot then 
 
-	mvn clean install
+	     mvn clean install
 
-	mvn spring-boot:build image
+	     mvn spring-boot:build image
 
    -  then you need to tag docker image like 
 
@@ -26,7 +26,7 @@
 
 ###  Docker push
 
-        docker push <ECR Full registry with repo name>
+        docker push <ecr full registry with repo name>
 
 
 
@@ -35,4 +35,4 @@
 
 ### Build Docker Image
 
-      docker build -t <image-image> .
+      docker build -t <image-name> .
