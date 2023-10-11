@@ -1,25 +1,37 @@
-**--install  AWS in window machine**
-download AWSCLIV2 in your machine and proceed with normal software install
+### install  AWS in window machine
+        
+	 download AWSCLIV2 in your machine and proceed with normal software install
  
-**--configure aws account in aws cli**
-cmd>aws configure
+### configure aws account in aws cli
 
-provide genarated IAM acces key and secreat key
+        cmd>aws configure
 
-**-- push image to ECR registry**
-cmd> aws ecr get-login-password | docker login --username AWS --password-stdin <ECR main url without registry name>
+        provide genarated IAM acces key and secreat key
 
-**--Build Docker image**
-maven build then you need to tag docker image like 
-docker tag <image>:<tag> <ECR Full registry with repo name>
+###  push image to ECR registry
 
-**--Docker push**
-docker push <ECR Full registry with repo name>
+       cmd> aws ecr get-login-password | docker login --username AWS --password-stdin <ECR main url without registry name>
+
+### Build Docker image
+
+-   if you building through maven build and spring  boot then 
+
+	mvn clean install
+	mvn spring-boot:build image
+
+        -  then you need to tag docker image like 
+
+            docker tag <image-name>:<tag-name> <ECR Full registry with repo name>
+
+###  Docker push
+
+        docker push <ECR Full registry with repo name>
 
 
 
 
 
 
-**-- BUild Docker Image**
-docker build -t <Image> .
+### Build Docker Image
+
+      docker build -t <Image-image> .
