@@ -24,15 +24,14 @@ Run your Docker image on AWS ECS (Elastic Container Service)
 <img width="576" alt="11" src="https://user-images.githubusercontent.com/25712816/91267149-570d0780-e790-11ea-8497-806b30cbcfc2.PNG">
 
 
-SHOULD be used in ECR like 
+### should be used in ECR after push docker image to docker hub like
 
-after push docker image to docker hub
-
-docker.io/rtlsecs/springboot-docker-aws-ecs:latest---website/image/tag
+      docker.io/rtlsecs/springboot-docker-aws-ecs:latest---website/image/tag
 
 
-- Build Docker image using Docker Command
-       docker build -t <image> .
+### Build Docker image using Docker Command
+
+        docker build -t <image-name> .
 
 
 
