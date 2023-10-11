@@ -10,18 +10,19 @@
 
 ###  push image to ECR registry
 
-       cmd> aws ecr get-login-password | docker login --username AWS --password-stdin <ECR main url without registry name>
+       cmd> aws ecr get-login-password | docker login --username AWS --password-stdin <ecr main url without registry name>
 
 ### Build Docker image
 
 -   if you building through maven build and spring  boot then 
 
 	mvn clean install
+
 	mvn spring-boot:build image
 
-        -  then you need to tag docker image like 
+   -  then you need to tag docker image like 
 
-            docker tag <image-name>:<tag-name> <ECR Full registry with repo name>
+            docker tag <image-name>:<tag-name> <ecr full registry with repo name>
 
 ###  Docker push
 
@@ -34,4 +35,4 @@
 
 ### Build Docker Image
 
-      docker build -t <Image-image> .
+      docker build -t <image-image> .
