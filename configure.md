@@ -29,6 +29,10 @@
         docker push <ecr full registry with repo name>
 
 
+ ![image](https://github.com/rtls-net/springboot-docker-ecr-ecs-dochub-impl/assets/147226341/9623d287-2145-42ad-8df5-f666fd4a20f4)
+
+
+
 
 
 
