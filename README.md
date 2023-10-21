@@ -34,6 +34,24 @@ Run your Docker image on AWS ECS (Elastic Container Service)
         docker build -t <image-name> .
 
 
+### Configure ECS
+
+      - Create ECS cluster  
+          -- provide cluster name and select infrastructure where you want to deploy i.e -> Fargate 
+
+      - Assign task def by going to cluster and then Task
+
+	     --provide TaskDefRole---->AmazonECSTaskExecutionRolePolicy
+
+              --provide  ECR Image uri in Image section 
+
+       - provide Security group like below
+
+	     AllTCp
+             AllTeriffic
+
+      
+
 
 
 
